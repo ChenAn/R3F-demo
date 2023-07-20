@@ -1,0 +1,41 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`TopMenu 初期表示 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1tbn94p-TopMenu"
+  >
+    <a
+      href="/scene1"
+    >
+      サンプル(Three.js)
+    </a>
+    <a
+      href="/scene2"
+    >
+      サンプル(R3F)
+    </a>
+    <a
+      href="/scene3"
+    >
+      マウスクリック(Three.js)
+    </a>
+    <a
+      href="/scene4"
+    >
+      マウスクリック(R3F)
+    </a>
+    <a
+      href="/scene5"
+    >
+      表面に沿ってドラッグ(R3F)
+    </a>
+    <a
+      href="/scene6"
+    >
+      3DとDOMを分離
+    </a>
+  </div>
+  ,
+</DocumentFragment>
+`;

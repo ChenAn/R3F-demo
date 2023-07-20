@@ -1,0 +1,21 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Scene6 初期表示 1`] = `
+<DocumentFragment>
+  <div
+    class="css-1np4oav-Scene6"
+  >
+    <p>
+      テスト用にテキスト
+    </p>
+    <div
+      class="css-1atx4qx-Scene6"
+      style="position: relative; width: 100%; height: 100%; overflow: hidden;"
+    >
+      <canvas
+        style="display: block;"
+      />
+    </div>
+  </div>
+</DocumentFragment>
+`;

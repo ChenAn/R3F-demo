@@ -1,0 +1,27 @@
+{
+    "roots": ["<rootDir>"],
+    "collectCoverageFrom":["src/**/*.{js,jsx,ts,tsx}","!src/**/*.d.ts"],
+    "setupFiles":["./node_modules/react-app-polyfill/jsdom.js"],
+    "setupFilesAfterEnv":["./jest.setup.js"],
+    "testMatch":["**/__tests__/**/*[-_]test.js?(x)","**/__tests__/**/*[-_]snapshot.js?(x)"],
+    "testEnvironment": "jsdom",
+    "transform":{
+        "^.+\\.(js|jsx|mjs|cjs|ts|tsx)$":"./node_modules/react-scripts/config/jest/babelTransform.js",
+        "^.+\\.css$":"./node_modules/react-scripts/config/jest/cssTransform.js",
+        "^(?!.*\\.(js|jsx|mjs|cjs|ts|tsx|css|json)$)":"./node_modules/react-scripts/config/jest/fileTransform.js"
+    },
+    "transformIgnorePatterns":[
+        "[/\\\\]node_modules[/\\\\].+\\.(js|jsx|mjs|cjs|ts|tsx)$",
+        "^.+\\.module\\.(css|sass|scss)$"
+    ],
+    "modulePaths":[],
+    "moduleNameMapper": {
+        "^@(src/.+)": "<rootDir>/$1",
+        "^@tests/(.+)": "<rootDir>/__tests__/$1",
+        "\\.(css)$": "identity-obj-proxy",
+        "^.+\\.module\\.(css|sass|scss)$":"identity-obj-proxy"
+    },
+    "moduleFileExtensions":["web.js","js","web.ts","ts","web.tsx","tsx","json","web.jsx","jsx","node"],
+    "watchPlugins":["jest-watch-typeahead/filename","jest-watch-typeahead/testname"],
+    "resetMocks": true
+}
